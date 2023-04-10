@@ -32,8 +32,3 @@ fetch.cre(action)
 
 answer = fetch.read()
 print(answer)
-
-
-
-#print("<p>Bot: {}</p>".format(response))
-

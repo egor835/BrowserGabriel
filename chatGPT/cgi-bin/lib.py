@@ -24,8 +24,16 @@ class Fetch:
         f = open("history.txt", "r")
         his = f.read()
         f.close()
-        text = output + his
-        f = open("history.txt", "w")
-        f.write(text)
-        f.close()
+        if output == "":
+            text = his
+        elif output == "clear":
+            text = ""
+            f = open("history.txt", "w")
+            f.write("")
+            f.close()
+        else:
+            text = output + his
+            f = open("history.txt", "w")
+            f.write(text)
+            f.close()
         return text

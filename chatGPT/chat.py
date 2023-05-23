@@ -17,18 +17,20 @@ while True:
     print(text)
     if text == "!reset":
         chatbot.reset()
-        f = open("history.txt", "w")
-        f.write("")
-        f.close()
-        response = "Erased"
+        response = "clear"
     elif text == "":
         response = ""
-    elif text == "!stop":
-        quit()
+    elif text == "!clear":
+        response = "clear"
     else:
         response = chatbot.ask(text)
     print(response)
 
-    f = open("output.txt", "w")
-    f.write(f"Bot: {response}<br><br>User: {text}<br>-----------------<br>")
-    f.close()
+    if response == "" or response == "clear":
+        f = open("output.txt", "w")
+        f.write(response)
+        f.close()
+    else:
+        f = open("output.txt", "w")
+        f.write(f"Bot: {response}<br><br>User: {text}<br>-----------------<br>")
+        f.close()

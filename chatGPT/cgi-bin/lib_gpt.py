@@ -21,19 +21,19 @@ class Fetch:
         output = f.read()
         f.close()
         os.remove("output.txt")
-        f = open("history.txt", "r")
+        f = open("history_gpt.txt", "r")
         his = f.read()
         f.close()
         if output == "":
             text = his
         elif output == "clear":
             text = ""
-            f = open("history.txt", "w")
+            f = open("history_gpt.txt", "w")
             f.write("")
             f.close()
         else:
             text = output + his
-            f = open("history.txt", "w")
+            f = open("history_gpt.txt", "w")
             f.write(text)
             f.close()
         return text

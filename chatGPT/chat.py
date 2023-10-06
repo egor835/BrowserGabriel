@@ -1,7 +1,7 @@
 from revChatGPT.V3 import Chatbot
 import os
 import time
-t = open("../token", "r")
+t = open("../key", "r")
 token = t.read()
 t.close()
 chatbot = Chatbot(api_key=token, engine="gpt-3.5-turbo")

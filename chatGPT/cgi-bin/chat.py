@@ -5,7 +5,7 @@ import cgi
 form = cgi.FieldStorage()
 action = form.getfirst("action", "")
 
-from lib import Fetch
+from lib_gpt import Fetch
 fetch = Fetch()
 
 pattern = '''

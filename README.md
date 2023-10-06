@@ -7,10 +7,10 @@ ChatGPT на любом кирпиче
 ```
 pip3 install revChatGPT==4.0.3
 git clone https://github.com/egor835/BrowserGabriel
-cd BrowserGabriel
+cd BrowserGabriel/chatGPT
 sudo chmod 777 start.sh
 sudo chmod 777 cgi-bin/chat.py
-nano token
+nano ../token
 ```
 Прописываем свой openAI токен, сохраняем ctrl+x y.
 

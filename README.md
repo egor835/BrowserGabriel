@@ -18,8 +18,4 @@ nano token
 ```
 ./start.sh
 ```
-Открываем другое окно терминала
-```
-python3 chat.py
-```
 Вводим в браузере http://localhost:8000/cgi-bin/chat.py и радуемся.

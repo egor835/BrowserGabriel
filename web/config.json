@@ -1,0 +1,1 @@
+{"model": "airoboros-ggml-model-q4_0.bin", "n": "2048", "penalty": "1.0", "args": "", "prompt": "chat-with-gab.txt", "skips": 4, "use_translator": false, "sleep_time": 30}

@@ -1,0 +1,41 @@
+from revChatGPT.V3 import Chatbot
+import os
+import time
+t = open("../key", "r")
+token = t.read().replace("\n","")
+t.close()
+print(token)
+chatbot = Chatbot(api_key=token, engine="gpt-3.5-turbo")
+print("started")
+while True:
+    while os.path.isfile("input.txt") == False:
+        pass
+    time.sleep(0.5)
+
+    f = open("input.txt", "r")
+    text = f.read()
+    f.close()
+    os.remove("input.txt")
+    print(text)
+    if text == "!reset":
+        chatbot.reset()
+        response = "clear"
+    elif text == "":
+        response = ""
+    elif text == "!clear":
+        response = "clear"
+    else:
+        try:
+            response = chatbot.ask(text)
+        except:
+            responce = "fuck you"
+    print(response)
+
+    if response == "" or response == "clear":
+        f = open("output.txt", "w")
+        f.write(response)
+        f.close()
+    else:
+        f = open("output.txt", "w")
+        f.write(f"Bot: {response}<br><br>User: {text}<br>-----------------<br>")
+        f.close()

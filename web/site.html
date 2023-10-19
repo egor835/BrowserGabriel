@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YoptAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link type="image/x-icon" href="icon.ico" rel="shortcut icon">
+  </head>
+  <style>
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(30, 34, 37, 0.959);
+    }
+    
+    h1 {
+      font-size: 36px;
+      color: white;
+      opacity: 100%;
+    }
+  
+    h2 {
+      font-size: 30px;
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(49, 51, 56);
+    }
+  
+    main {
+      width: 80%;
+      margin: 0 auto;
+      }
+      
+  .copyright {
+    text-align: center;
+  }
+
+  .suka #my-image {
+    border: 3px solid rgb(30, 31, 34);
+  }
+  
+  .suka img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .suka2 {
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+
+  .suka2 #my-image {
+    border: 3px solid rgb(30, 31, 34);
+  }
+  
+  .suka2 img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .suka2 {
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  
+  .suka img:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+   }
+
+  .suka {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .suka:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .suka img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .suka:not(:hover) img {
+    transform: translateY(0);
+  }
+
+  .suka2 {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .suka2:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .suka2 img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .suka2:not(:hover) img {
+    transform: translateY(0);
+  }
+  
+  .yopt {
+    text-align: center;
+  }
+
+  .txtes {
+    text-align: center;
+  }
+
+  .discord {
+      margin-top: -2777px;
+      margin-bottom: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: 1600px;
+    }
+
+    .discord {
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .discord:hover {
+      transform: translateY(-10px);
+    }
+    
+    .discord {
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .discord:not(:hover) {
+      transform: translateY(0);
+    }
+
+    .stable {
+      position: relative;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .stable:hover img {
+      transform: translateY(-10px);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .stable img {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .stable:not(:hover) img {
+      transform: translateY(0);
+    }
+    
+    .stable {
+      text-align: center;
+    }
+
+    .text-container {
+      display: inline-block;
+      position: relative;
+    }
+    
+    .print {
+      animation: typing 4s steps(50), blink-caret 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 24px;
+      transition: all 1.5s ease;
+    }
+    
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+    
+    .cursor {
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 10px;
+      height: 100%;
+      background-color: transparent;
+      border-right: 2px solid orange;
+      animation: blink-caret 0.75s step-end infinite;
+    }
+
+    .br {
+      position: relative;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .br:hover img {
+      transform: translateY(-10px);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .br img {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .br:not(:hover) img {
+      transform: translateY(0);
+    }
+    
+    .br {
+      text-align: left;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="print">
+      <h1>Добро пожаловать на YoptAI</h1>
+      <h2>Разработка - наша страсть, ИИ - наша миссия - YoptAI</h2>
+    </div>
+    </header>
+    <main>
+      <div class="print">
+      <h2>Здесь вы можете найти информацию о нашей компании и о наших проэктах</h2>
+      <h2>Мы являемся лидерами в области школьного искусственного интеллекта</h2> 
+      <h2>YoptAI принимает любую помощь в развитии ИИ!</h2> 
+      <h2>YoptAI получила доступ к GPT-4 вы можете использовать его где угодно, даже в России!</h2>
+      <h2>Модели ИИ YoptAI: на данный момент существует только одна, Yopta-1</h2>
+      </div>
+       <div class="suka">
+        <img src="/assets/suka.png">
+      </div>
+      <div class="txtes">
+        <div class="print">
+        <h1>- Вот примеры ответов нашего гения</h1>
+      </div>
+      </div>
+      <div class="suka2">
+        <img src="/assets/brawl.png" class="suka2">
+      </div>
+      <div class="txtes">
+        <div class="print">
+        <h1>- А ещё он может рисовать картинки</h1>
+      </div>
+      </div>
+      <div class="stable">
+        <img src="/assets/draw.png">
+      </div>
+      <div class="br">
+        <h1>- Также YoptAI пытается сделать качественный байпас ChatGPT</h1>
+        <img src="/assets/meth.png">
+      </div>
+    </main>
+    <div class="copyright">
+    <h3>Мы используем технологию Text-GPT для реализации наших идей</h3>
+    <h2>---------</h2>
+    <h3>YoptAI-является недо-компанией созданной 4-мя школьниками которые делают ИИ*</h3>
+    <h2>---------</h2>
+	<h2>Ссылки:</h2>
+	</div>
+    <div class="copyright">
+  <div class="copyright">
+    <a href="/cgi-bin/chatgpt.py" title="тот самый chatGPT 3.5 от openAI">
+    <h3>chatGPT</h3>
+  </a>
+    <a href="/cgi-bin/chat.py" title="llama.cpp с моделью, обученной на ответах chatGPT 4">
+    <h3>Gaby :3</h3>
+  </a><a href="/cgi-bin/config.py" title="Config page">
+    <h3>Gaby config</h3>
+  </a></div><div class="copyright">
+    <a href="http://parky.ddns.net:8080/" title="криво сделанный через питон, кого сильно ебёт - подключайтесь через smb.">
+    <h3>Файловый веб-сервер</h3>
+  </a><a href="/mods.zip" title="айпи - этот адрес">
+    <h3>Моды на Minecraft сервер 1.19.2</h3>
+  </a></div><footer>
+    <footer>
+      <div class="copyright">
+      <h3>&copy; YoptAI, 2023<br><br>Создатели:<br>фронтенд: @fnm08<br>тестировщик: @timka16di1<br>хостер: @cunny1<br>основатель: @parkurnic</h3>
+      <!--
+Спасибо за всё, парни, этот год прошёл весело :3 
+Пока я жив и у меня есть интернет, этот сайт и Габи в частности продолжит существовать и развиваться. Я обещаю ^_^
+-->
+    </div>
+      <div class="yopt">
+      	<img src = "/assets/yoptai_text.png">
+    </div>
+    <div class="discord">
+      <iframe src="https://discord.com/widget?id=1056937672947548220&theme=dark" width="270" height="450" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+    </footer>
+  </footer>
+    </div>
+  </body>
+</html> 

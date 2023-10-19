@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import cgi
+form = cgi.FieldStorage()
+action = form.getfirst("action", "")
+
+from lib_gpt import Fetch
+fetch = Fetch()
+
+pattern = '''
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Type !reset</title>
+</head>
+<body>
+    ChatGPT
+    <form action="/cgi-bin/chatgpt.py">
+        <textarea name="action"></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>
+'''
+
+
+print('Content-type: text/html\n')
+print(pattern)
+fetch.cre(action)
+
+answer = fetch.read()
+#print(f"<pre>{answer}</pre>")
+print(answer.replace("\n", "<br>").replace("```python", "Python code:<pre>").replace("```","</pre>"))
+
+
+
+#print("<p>Bot: {}</p>".format(response))
+

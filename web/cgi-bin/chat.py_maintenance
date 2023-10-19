@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import cgi
+
+pattern = '''
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gaby :3</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f8fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .UltraDiv {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    #message {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #user-input {
+        display: flex;
+    }
+
+    #action {
+        flex: 1;
+        padding: 5px;
+    }
+
+    #submit-button {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .UltraDiv {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .UltraDiv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .UltraDiv {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .UltraDiv:not(:hover) {
+    transform: translateY(0);
+  }
+
+</style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>llama.cpp</h1>
+    </div>
+    <div class="UltraDiv">
+    <div id="container">
+    </div>
+    Габи временно здох нахуй, ждите, скоро доделаю (в этом году надеюсь)
+</div>
+<div class="img">
+    <img src="/assets/yoptai.png" class="yopta">
+</div>
+</body>
+</html>
+'''
+
+print('Content-type: text/html\n')
+print(pattern)
